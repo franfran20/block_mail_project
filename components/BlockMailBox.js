@@ -3,14 +3,7 @@ import { useMoralis } from "react-moralis";
 import { ADDRESS_ZERO } from "../constants/AddressZero";
 import styles from "../styles/Home.module.css";
 
-export const BlockMailBox = ({
-  mailID,
-  message,
-  title,
-  reciever,
-  from,
-  nativeAsset,
-}) => {
+export const BlockMailBox = (props) => {
   const { isWeb3Enabled } = useMoralis();
 
   if (isWeb3Enabled) {
@@ -30,10 +23,10 @@ export const BlockMailBox = ({
               <th>From</th>
             </tr>
             <tr className={styles.subText}>
-              <td>#{mailID}</td>
-              <td>{nativeAsset == 0 ? "None" : nativeAsset}</td>
+              <td>#{props.mailID}</td>
+              <td>{props.nativeAsset == 0 ? "None" : nativeAsset}</td>
 
-              <td>{from}</td>
+              <td>{props.from}</td>
             </tr>
           </tbody>
         </table>
