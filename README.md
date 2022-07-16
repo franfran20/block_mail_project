@@ -1,4 +1,4 @@
-#LINK TO VIDEO DEMO
+# LINK TO VIDEO DEMO
 Soon... Had to submit before deadline!
 
 
@@ -73,8 +73,6 @@ Most of the imporovements listed down below that couldn't be completed were due 
 - Other Improvements would come along once the project is ready to go mainstream!
 
 # Links
-
-- Link to the live project on vercel [here](https://block-mail-project-ad7anxy7c-franfran20.vercel.app/).
 - Link to the smart contracts code [here](https://github.com/franfran20/blockmail_smart_contracts_testnet).
 - Link to the frontend code [here](https://github.com/franfran20/block_mail_project).
 - Contract Address in mumbai - 0xe0DE79AFdE2a6e6517F7A20E0923d957ee24b3cd
