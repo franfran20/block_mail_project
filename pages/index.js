@@ -4,8 +4,8 @@ import { BlockMailBox } from "../components/BlockMailBox";
 import { NoMailsYet } from "../components/NoMailsYet";
 
 export async function getAllMailId() {
-  const fetchURL = process.env.NEXT_PUBLIC_GET_MAIL_ID_URL;
-  const res = await fetch(fetchURL);
+  //const fetchURL = process.env.NEXT_PUBLIC_GET_MAIL_ID_URL;
+  const res = await fetch("https://frnxo6fi5r0g.usemoralis.com:2053/server/functions/getMails?_ApplicationId=n9J8RymL2oTa3dtSJM7nxTyPDeJudHVnRRF7rcvW");
   const allMails = await res.json();
   console.log(allMails);
 
@@ -19,10 +19,10 @@ export async function getAllMailId() {
 }
 
 export async function getAllMailData(id) {
-  const fetchURL = `${
-    process.env.NEXT_PUBLIC_GET_ALL_MAIL_DATA_URL + "&id=" + id
-  }`;
-  const res = await fetch(fetchURL);
+//   const fetchURL = `${
+//     process.env.NEXT_PUBLIC_GET_ALL_MAIL_DATA_URL + "&id=" + id
+//   }`;
+  const res = await fetch(`https://frnxo6fi5r0g.usemoralis.com:2053/server/functions/getMailsById_ApplicationId=n9J8RymL2oTa3dtSJM7nxTyPDeJudHVnRRF7rcvW&id&{id}`);
   const singleMail = await res.json();
   return {
     id,
