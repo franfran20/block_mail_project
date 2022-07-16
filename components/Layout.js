@@ -38,7 +38,7 @@ export const Layout = ({ children }) => {
 
   if (isWeb3Enabled) {
     return (
-      <>
+      <div>
         <Head>
           <title>Block Mail Test 1</title>
           <link rel="icon" href="/newlogo.png" />
@@ -81,7 +81,7 @@ export const Layout = ({ children }) => {
             Please use a device with a bigger screen e.g laptop, desktop e.t.c
           </p>
         </div>
-      </>
+      </div>
     );
   } else {
     return (
