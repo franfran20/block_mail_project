@@ -38,6 +38,7 @@ export const Layout = ({ children }) => {
 
   if (isWeb3Enabled) {
     return (
+      <React.Fragment>
       <div>
         <Head>
           <title>Block Mail Test 1</title>
@@ -82,9 +83,11 @@ export const Layout = ({ children }) => {
           </p>
         </div>
       </div>
+  </React.Fragment>
     );
   } else {
     return (
+      <React.Fragment>
       <div>
         <Head>
           <title>Block Mail Test 1</title>
@@ -121,6 +124,7 @@ export const Layout = ({ children }) => {
           </p>
         </div>
       </div>
+</React.Fragment>
     );
   }
 };
