@@ -1,0 +1,188 @@
+/*navbar*/
+
+.nav {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  left: 15%;
+  width: 85%;
+  z-index: 3;
+}
+
+.twitter {
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+}
+
+.formattedAddr {
+  color: #303030;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 15px;
+  text-decoration: underline;
+}
+
+/*side bar*/
+.sideBar {
+  background-color: #424242;
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  /* padding: 20px; */
+  /* font-weight: 00; */
+  /* z-index: 3;*/
+}
+
+.sideBar a {
+  color: rgb(226, 226, 226);
+  font-size: 17px;
+  padding: 9px 16px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
+.sideBar a:hover {
+  color: rgb(36, 36, 36);
+  background-color: aliceblue;
+}
+
+.sideBar div {
+  width: 100%;
+  /* margin-bottom: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sideBar div h3 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: -5px;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.sideBar div img {
+  width: 200px;
+  height: 100px;
+}
+
+.content {
+  width: 85%;
+  position: relative;
+  top: 20%;
+  margin-left: 15%;
+  z-index: 1;
+}
+
+.web3notEnabled {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.493); */
+  height: 100vh;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.699);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+}
+
+.web3notEnabled img {
+  width: 70%;
+  height: 60%;
+  margin-left: -50px;
+}
+
+.web3notEnabled div {
+  margin-left: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: flex-start;
+  border-left: 4px solid rgb(255, 255, 255);
+  margin-left: -120px;
+  margin-top: -50px;
+  padding: 60px;
+}
+
+.web3notEnabled div button {
+  font-size: 26px;
+  background-color: rgb(17, 17, 17);
+  color: wheat;
+  padding: 10px 20px;
+  font-size: 22px;
+  border: none;
+}
+
+.web3notEnabled div button:hover {
+  color: rgb(17, 17, 17);
+  background-color: wheat;
+}
+
+.web3notEnabled div h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.web3notEnabled div h2 {
+  margin-top: -20px;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.smallDevice {
+  display: none;
+}
+
+@media only screen and (max-width: 860px) {
+  .layoutContaier {
+    display: none;
+  }
+
+  .smallDevice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #3b3b3b;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .smallDevice .img {
+    height: 30%px;
+    width: 30%;
+  }
+
+  .smallDevice h2 {
+    color: wheat;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .smallDevice p {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,39 @@
+.header {
+  font-size: 23px;
+  padding: 20px;
+}
+
+.accessControl {
+  padding: 20px;
+}
+.accessControl h1 {
+  color: rgba(0, 0, 0, 0.842);
+}
+
+.accessControl h2 {
+  color: rgb(53, 53, 53);
+}
+
+.accessControl input {
+  width: 40%;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgba(36, 36, 35, 0.247);
+  padding: 5px 10px;
+}
+
+.accessControl input:focus {
+  outline: none;
+}
+
+.accessControl button {
+  font-size: 14px;
+  border: none;
+  padding: 10px 12px;
+  color: white;
+  border-radius: 2px;
+  background-color: rgb(39, 39, 39);
+  margin-bottom: 3px;
+}

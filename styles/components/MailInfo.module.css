@@ -1,0 +1,85 @@
+.MailInfoContainer {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: anywhere;
+  background-color: #ffffff;
+  width: 100%;
+  border-left: 1px solid #aaa6a6;
+  padding: 10px;
+}
+
+.info p {
+  color: #35393c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info span {
+  color: #35393c;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.fromAndMatic {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 80%;
+}
+
+.titleDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleDiv p {
+  font-size: 40px;
+  font-weight: 100;
+  padding-left: 10px;
+  color: #4e4e4e60;
+}
+
+.titleDiv span {
+  font-size: 40px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.message {
+  margin-top: -30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 20px;
+}
+
+.message div {
+  overflow-wrap: anywhere;
+  font-size: 25px;
+  background-color: #53535327;
+}
+
+.message button {
+  margin-top: 20px;
+  padding: 8px;
+  display: block;
+  border: none;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  padding: 10px 13px;
+  border-radius: 3px;
+}
+
+.message button:hover {
+  background-color: rgb(255, 219, 152);
+  color: rgb(241, 175, 53);
+}
