@@ -1,3 +1,7 @@
+#LINK TO VIDEO DEMO
+Soon... Had to submit before deadline!
+
+
 # What is BlockMail?
 
 BlockMail is a mail service built on top of the decentralized web which is IPFS. Blockmail solves the problem of **spam mails(unwanted mails)**, also allowing mails to have **monetary values** attached to those mails/messages. Most importantly, blockmail gives you one hundred percent **control** over how you wish to manage your mails. Exciting right? Oh and for the rest of this article we'll refer to mails as **blockmails**.
