@@ -25,7 +25,7 @@ export const BlockMailBox = (props) => {
               </tr>
               <tr className={styles.subText}>
                 <td>#{props.mailID}</td>
-                <td>{props.nativeAsset == 0 ? "None" : nativeAsset}</td>
+                <td>{props.nativeAsset == 0 ? "None" : props.nativeAsset}</td>
                 <td>{props.from}</td>
               </tr>
             </tbody>
