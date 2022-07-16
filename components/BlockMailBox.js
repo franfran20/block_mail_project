@@ -8,28 +8,30 @@ export const BlockMailBox = (props) => {
 
   if (isWeb3Enabled) {
     return (
-      <Link className={styles.blockMailBox} href={`/${mailID}`}>
-        <img
-          className={styles.logoMessage}
-          src="newlogo.png"
-          width="100px"
-          height="60px"
-        />
-        <table>
-          <tbody>
-            <tr className={styles.subHeader}>
-              <th>ID</th>
-              <th>MATIC</th>
-              <th>From</th>
-            </tr>
-            <tr className={styles.subText}>
-              <td>#{props.mailID}</td>
-              <td>{props.nativeAsset == 0 ? "None" : nativeAsset}</td>
+      <Link href={`/${mailID}`}>
+        <div className={styles.blockMailBox}>
+          <img
+            className={styles.logoMessage}
+            src="newlogo.png"
+            width="100px"
+            height="60px"
+          />
+          <table>
+            <tbody>
+              <tr className={styles.subHeader}>
+                <th>ID</th>
+                <th>MATIC</th>
+                <th>From</th>
+              </tr>
+              <tr className={styles.subText}>
+                <td>#{props.mailID}</td>
+                <td>{props.nativeAsset == 0 ? "None" : nativeAsset}</td>
 
-              <td>{props.from}</td>
-            </tr>
-          </tbody>
-        </table>
+                <td>{props.from}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </Link>
     );
   }
