@@ -48,21 +48,23 @@ export default function Home() {
         ) : mails.length == 0 ? (
           <NoMailsYet />
         ) : (
-          mails.map((mail) => {
-            const { mailID, title, message, receiver, from, nativeAsset } =
-              mail.attributes;
-            return (
-              <BlockMailBox
-                key={mailID}
-                mailID={mailID}
-                message={message}
-                receiver={receiver}
-                from={from}
-                nativeAsset={Moralis.Units.FromWei(nativeAsset)}
-                title={title}
-              />
-            );
-          })
+          <div>
+            {mails.map((mail) => {
+              const { mailID, title, message, receiver, from, nativeAsset } =
+                mail.attributes;
+              return (
+                <BlockMailBox
+                  key={mailID}
+                  mailID={mailID}
+                  message={message}
+                  receiver={receiver}
+                  from={from}
+                  nativeAsset={Moralis.Units.FromWei(nativeAsset)}
+                  title={title}
+                />
+              );
+            })}
+          </div>
         )}
       </div>
     </div>
