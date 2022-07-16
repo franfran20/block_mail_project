@@ -8,7 +8,7 @@ export const BlockMailBox = (props) => {
 
   if (isWeb3Enabled) {
     return (
-      <Link href={`/${mailID}`}>
+      <Link href={`/${props.mailID}`}>
         <div className={styles.blockMailBox}>
           <img
             className={styles.logoMessage}
