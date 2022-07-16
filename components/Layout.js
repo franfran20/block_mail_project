@@ -3,7 +3,7 @@ import styles from "../styles/components/Layout.module.css";
 import { truncateStr } from "../utils/helperFunctions";
 import Head from "next/head";
 import { connectLit } from "../utils/lit";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 export const Layout = ({ children }) => {
