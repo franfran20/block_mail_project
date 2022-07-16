@@ -4,8 +4,8 @@ import { BlockMailBox } from "../components/BlockMailBox";
 import { NoMailsYet } from "../components/NoMailsYet";
 
 export async function getAllMailId() {
-  const fetchURL = process.env.NEXT_PUBLIC_GET_MAIL_ID_URL;
-  const res = await fetch(fetchURL);
+//   const fetchURL = process.env.NEXT_PUBLIC_GET_MAIL_ID_URL;
+  const res = await fetch("https://frnxo6fi5r0g.usemoralis.com:2053/server/functions/getMails?_ApplicationId=n9J8RymL2oTa3dtSJM7nxTyPDeJudHVnRRF7rcvW");
   const allMails = await res.json();
   console.log(allMails);
 
