@@ -1,6 +1,6 @@
 # LINK TO VIDEO DEMO
 Video demo would and description will be out in less than 2 hours.
-Here is the [link](https://restless-limit-8335.on.fleek.co/2) to the live demo hosted on fleek.
+Here is the [link](https://restless-limit-8335.on.fleek.co) to the live demo hosted on fleek.
 It might be a bit glitchy, depends!
 
 
