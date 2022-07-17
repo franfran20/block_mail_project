@@ -53,26 +53,20 @@ The code below:
 
 ```js
 async function makeFileObjectsAndStore(_message) {
-  await disconnectWeb3();
-  console.log(mailId);
-  const packagedData = await encrypt(_message, mailId.toString());
-  const blob = new Blob([JSON.stringify(packagedData)], {
-    type: "application/json",
-  });
-  const files = [new File([blob], `${mailId}.json`)];
+    await disconnectWeb3();
+    console.log(mailId);
+    const packagedData = await encrypt(_message, mailId.toString());
+    const blob = new Blob([JSON.stringify(packagedData)], {
+      type: "application/json",
+    });
+    const files = [new File([blob], `${mailId}.json`)];
 
-  const onStoredChunk = (size) => {
-    uploaded += size;
-    const pct = totalSize / uploaded;
-    setUploadStatus(`Uploading... ${pct.toFixed(2)}% complete`);
-  };
-
-  const client = makeStorageClient();
-  const cid = await client.put(files, { onRootCidReady, onStoredChunk });
-  console.log(`stored mail ${mailId} with cid:`, cid);
-  const publicLink = addPublicGateway(cid, mailId).toString();
-  setEncryptedLink(publicLink);
-}
+    const client = makeStorageClient();
+    const cid = await client.put(files);
+    console.log(`stored mail ${mailId} with cid:`, cid);
+    const publicLink = addPublicGateway(cid, mailId).toString();
+    setEncryptedLink(publicLink);
+  }
 ```
 
 ### TOOLS AND PROTOCOLS USED FOR THIS PROJECT
