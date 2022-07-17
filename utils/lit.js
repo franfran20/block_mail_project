@@ -60,7 +60,7 @@ export async function encrypt(stringMessage, mailId) {
 }
 
 export async function decryptMessage(messageLink, messageHexString) {
-  if (!litNodeClient) {
+  if (!window.litNodeClient) {
     await connectLit();
   }
   console.log("decrypting message....");
