@@ -3,9 +3,8 @@ import { useMoralis, useWeb3Contract } from "react-moralis";
 import { blockMailAbi, nftAbi, tokenAbi } from "../constants/abi";
 import style from "../styles/components/sendMail.module.css";
 import { Web3Storage } from "web3.storage";
-import { encrypt } from "../utils/lit";
+import { connectLit, encrypt } from "../utils/lit";
 import { contractAddress } from "../constants/networkMapping";
-import { ADDRESS_ZERO } from "../constants/AddressZero";
 import { disconnectWeb3 } from "lit-js-sdk";
 
 export default function SendMail() {
@@ -15,13 +14,16 @@ export default function SendMail() {
   const [encryptedLink, setEncryptedLink] = useState("");
   const [mailId, setMailId] = useState();
   const [title, setTitle] = useState("");
-  const errorRef = useRef();
   const {
     Moralis,
     account: connectedAcct,
     chainId,
     isWeb3Enabled,
   } = useMoralis();
+
+  useEffect(() => {
+    connectLit();
+  }, [isWeb3Enabled]);
 
   const chainID = parseInt(chainId).toString();
   const contractAddrr = contractAddress[chainID];
@@ -66,14 +68,8 @@ export default function SendMail() {
     });
     const files = [new File([blob], `${mailId}.json`)];
 
-    const onStoredChunk = (size) => {
-      uploaded += size;
-      const pct = totalSize / uploaded;
-      setUploadStatus(`Uploading... ${pct.toFixed(2)}% complete`);
-    };
-
     const client = makeStorageClient();
-    const cid = await client.put(files, { onRootCidReady, onStoredChunk });
+    const cid = await client.put(files);
     console.log(`stored mail ${mailId} with cid:`, cid);
     const publicLink = addPublicGateway(cid, mailId).toString();
     setEncryptedLink(publicLink);

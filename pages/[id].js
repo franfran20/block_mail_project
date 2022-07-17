@@ -20,6 +20,8 @@ export default function MailInfo({ mailData }) {
     fetchDecryptedMessage();
   }, [isWeb3Enabled]);
 
+  console.log(decryptedMessage);
+
   async function decrypt() {
     const decryptedString = await decryptMessage(
       mailData.result[0].message,
