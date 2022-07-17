@@ -13,7 +13,6 @@ export const Layout = ({ children }) => {
 
   async function handleConnect() {
     await enableWeb3();
-    window.localStorage.setItem("connected", "true");
     await connectLit();
   }
 
@@ -39,92 +38,100 @@ export const Layout = ({ children }) => {
   if (isWeb3Enabled) {
     return (
       <React.Fragment>
-      <div>
-        <Head>
-          <title>Block Mail Test 1</title>
-          <link rel="icon" href="/newlogo.png" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
-        <div className={styles.layoutContaier}>
-          <nav className={styles.nav}>
-            <Link href="https://twitter.com/FranFran_E">
-              <img src="twitter1.png" className={styles.twitter} />
-            </Link>
-            <p className={styles.formattedAddr}>{truncateStr(address, 16)}</p>
-          </nav>
+        <div>
+          <Head>
+            <title>Block Mail Test 1</title>
+            <link rel="icon" href="/newlogo.png" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+              rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossOrigin
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
+              rel="stylesheet"
+            />
+          </Head>
+          <div className={styles.layoutContaier}>
+            <nav className={styles.nav}>
+              <Link href="https://twitter.com/FranFran_E">
+                <img src="twitter1.png" className={styles.twitter} />
+              </Link>
+              <p className={styles.formattedAddr}>{truncateStr(address, 16)}</p>
+            </nav>
 
-          <div className={styles.sideBar}>
-            <div>
-              <img src="newlogo.png" />
-              <h3>BlockMail.</h3>
+            <div className={styles.sideBar}>
+              <div>
+                <img src="newlogo.png" />
+                <h3>BlockMail.</h3>
+              </div>
+              <Link href="/">Recent Mails</Link>
+              <Link href="/accessControl">Access Control</Link>
+              <Link href="/sendMail">Send BlockMail</Link>
             </div>
-            <Link href="/">Recent Mails</Link>
-            <Link href="/accessControl">Access Control</Link>
-            <Link href="/sendMail">Send BlockMail</Link>
-          </div>
 
-          <div className={styles.content}>{children}</div>
-          <footer></footer>
+            <div className={styles.content}>{children}</div>
+            <footer></footer>
+          </div>
+          <div className={styles.smallDevice}>
+            <img src="newlogo.png" className="img" />
+            <h2>Device to screen size too small.</h2>
+            <p>
+              Please use a device with a bigger screen e.g laptop, desktop e.t.c
+            </p>
+          </div>
         </div>
-        <div className={styles.smallDevice}>
-          <img src="newlogo.png" className="img" />
-          <h2>Device to screen size too small.</h2>
-          <p>
-            Please use a device with a bigger screen e.g laptop, desktop e.t.c
-          </p>
-        </div>
-      </div>
-  </React.Fragment>
+      </React.Fragment>
     );
   } else {
     return (
       <React.Fragment>
-      <div>
-        <Head>
-          <title>Block Mail Test 1</title>
-          <link rel="icon" href="/newlogo.png" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
-        <div className={styles.layoutContaier}>
-          <div className={styles.web3notEnabled}>
-            <img src="newlogo.png" />
-            <div>
-              <h1>Welcome to BlockMail</h1>
-              <h2>
-                The secure way to send and receive mails on the decentralized
-                web.
-              </h2>
-              <button onClick={handleConnect}>Connect</button>
+        <div>
+          <Head>
+            <title>Block Mail Test 1</title>
+            <link rel="icon" href="/newlogo.png" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link
+              rel="preconnect"
+              href="https://fonts.gstatic.com"
+              crossOrigin
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Poppins&family=Press+Start+2P&display=swap"
+              rel="stylesheet"
+            />
+          </Head>
+          <div className={styles.layoutContaier}>
+            <div className={styles.web3notEnabled}>
+              <img src="newlogo.png" />
+              <div>
+                <h1>Welcome to BlockMail</h1>
+                <h2>
+                  The secure way to send and receive mails on the decentralized
+                  web.
+                </h2>
+                <button onClick={handleConnect}>Connect</button>
+              </div>
             </div>
           </div>
+          <div className={styles.smallDevice}>
+            <img src="newlogo.png" className={styles.img} />
+            <h2>Device to screen size too small.</h2>
+            <p>
+              Please use a device with a bigger screen e.g laptop, desktop e.t.c
+            </p>
+          </div>
         </div>
-        <div className={styles.smallDevice}>
-          <img src="newlogo.png" className={styles.img} />
-          <h2>Device to screen size too small.</h2>
-          <p>
-            Please use a device with a bigger screen e.g laptop, desktop e.t.c
-          </p>
-        </div>
-      </div>
-</React.Fragment>
+      </React.Fragment>
     );
   }
 };

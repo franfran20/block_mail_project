@@ -2,12 +2,12 @@ import LitJsSdk, { LitNodeClient } from "lit-js-sdk";
 import { canUserDecryptAbi } from "../constants/abi";
 import { contractAddress } from "../constants/networkMapping";
 
-const client = new LitJsSdk.LitNodeClient();
+const client = new LitJsSdk.LitNodeClient({});
 const chain = "mumbai";
 const contractAddr = contractAddress["80001"];
 
 export async function connectLit() {
-  await client.connect();
+  await client.connect({ debug: false });
   console.log("Connected!");
   window.litNodeClient = client;
 }
@@ -67,6 +67,7 @@ export async function decryptMessage(messageLink, messageHexString) {
   // const symmetricKey = await getEncryptedKey(messageLink);
 
   const data = await fetch(messageLink);
+  console.log("mlink", messageLink);
   const dataOnIpfs = JSON.parse(await data.text());
 
   console.log("getting all the data..");
