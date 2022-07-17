@@ -1,7 +1,6 @@
 # LINK TO VIDEO DEMO
 Video demo would and description will be out in less than 2 hours.
 Here is the [link](https://restless-limit-8335.on.fleek.co) to the live demo hosted on fleek.
-It might be a bit glitchy, depends!
 
 
 # What is BlockMail?
@@ -75,6 +74,7 @@ Most of the imporovements listed down below that couldn't be completed were due 
 - Other Improvements would come along once the project is ready to go mainstream!
 
 # Links
+- Link to live demo [here](https://restless-limit-8335.on.fleek.co).
 - Link to the smart contracts code [here](https://github.com/franfran20/blockmail_smart_contracts_testnet).
 - Link to the frontend code [here](https://github.com/franfran20/block_mail_project).
 - Contract Address in mumbai - 0xe0DE79AFdE2a6e6517F7A20E0923d957ee24b3cd
