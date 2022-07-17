@@ -1,6 +1,28 @@
 # LINK TO VIDEO DEMO
-Video demo would and description will be out in less than 2 hours.
-Here is the [link](https://restless-limit-8335.on.fleek.co) to the live demo hosted on fleek.
+Here is the link to the video demo on [youtube](https://youtu.be/MAbMyI3uK1g). The video guide just below!
+Here is the [link](https://restless-limit-8335.on.fleek.co) to the live demo hosted on fleek. (It might be a bit buggy :( )
+
+Note: Keep in mind that the video was sped up by 3x. When playing with the live demo wait a little after clicking a button. I know its not the best UX, its what i could work with given the time.
+
+## Video guide
+- I'm using two accounts to show the power of blockmail. I already had some mails in there from previous testings.
+
+- I sign in with Metamask with account 2 and try to send a message to account 1.
+  - I input an address I'm sending the message to along with the title and message
+  - I click the encrypt button so i would'nt store the private message I wish to unencrypted and then sign to encrypt.
+  - I chose not to add matic but you could if you want!
+  - Then I copied my encrypted link and sent it via blockmail to the expected receipient.
+  - The transaction fails and gives me an error because account 1 has not given me permission to send them a mail.
+
+- I then switch to account one and allow account 2 to be able to send me a mail, wait for the transaction to be confirmed.
+- Switch back again to account 2 and try to send a mail and this time around it works.
+- I connect to blockmail again with account 1 and I see that a new mail has appeared.
+- I open it up and see the encrypted message. I then decrypt the message using my signature(account 1).
+- Boom! the messages' true value is revealed
+
+- The last section is to show anyone can have the encrypted link stored on ipfs but it requires only the signature of the required adsress to decrypt.
+- This is a huge integration of IPFS and LIT protocol.
+
 
 
 # What is BlockMail?
@@ -60,6 +82,7 @@ async function makeFileObjectsAndStore(_message) {
 - Moralis for indexing blockchain data and frontend web3 hooks.
 - Brownie for scripts for smart contracts.
 - Solidity for smart contracts.
+- Fleek for hosting.
 
 # Future Improvements
 
@@ -72,6 +95,7 @@ Most of the imporovements listed down below that couldn't be completed were due 
 - Add a fee structure
   To reduce the abuse of the mail service, a fee structure can be established so only important mails can be sent from address to address. To abstract away the service being used as a social app. People wil only pay a transaction fee to send a messsage they consider important!!
 - Other Improvements would come along once the project is ready to go mainstream!
+- Adding links, images and music as part of a blockmail. Right now its just limited to string messages.
 
 # Links
 - Link to live demo [here](https://restless-limit-8335.on.fleek.co).
