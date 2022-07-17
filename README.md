@@ -1,5 +1,7 @@
 # LINK TO VIDEO DEMO
-Soon... Had to submit before deadline!
+Video demo would and description will be out in less than 2 hours.
+Here is the [link](https://restless-limit-8335.on.fleek.co/2) to the live demo hosted on fleek.
+It might be a bit glitchy, depends!
 
 
 # What is BlockMail?
