@@ -23,11 +23,13 @@ Note: Keep in mind that the video was sped up by 3x. When playing with the live 
 - The last section is to show anyone can have the encrypted link stored on ipfs but it requires only the signature of the required adsress to decrypt.
 - This is a huge integration of IPFS and LIT protocol.
 
-
+![alt blockmail](https://ipfs.io/ipfs/bafybeiewrmkuchawpjpvb6mr7gtqpk5qyoh6lk5tbdpvewufbyddf6rl3u/newlogo.png)
 
 # What is BlockMail?
 
 BlockMail is a mail service built on top of the decentralized web which is IPFS. Blockmail solves the problem of **spam mails(unwanted mails)**, also allowing mails to have **monetary values** attached to those mails/messages. Most importantly, blockmail gives you one hundred percent **control** over how you wish to manage your mails. Exciting right? Oh and for the rest of this article we'll refer to mails as **blockmails**.
+
+
 
 # The Regular Mail Services and Its Problems
 
