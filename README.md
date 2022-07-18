@@ -50,7 +50,7 @@ What do I mean? Lit protocol grants access to specific content based on whether 
 
 # IPFS AND FILECOIN IMPLEMENTATION
 
-BlockMails by default are stored on the IPFS via web3.storage. You can check out the implementation of the code [here]("link to web3storage"). BlockMail uses web3.storage to store the encrypted data for the user on IPFS using the javascript client which is really cool. Using web3.storage store the encrypted information as a json object that we could easily fetch using a GET request.
+BlockMails by default are stored on the IPFS via web3.storage. BlockMail uses web3.storage to store the encrypted data for the user on IPFS using the javascript client which is really cool. Using web3.storage store the encrypted information as a json object that we could easily fetch using a GET request.
 The code below:
 
 ```js
