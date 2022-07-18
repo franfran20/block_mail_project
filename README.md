@@ -37,7 +37,7 @@ BlockMail is a mail service built on top of the decentralized web which is IPFS.
 
 ### Spams
 
-The regular mail services today in and of its self isn't acrually that bad, but it can be better. When using the regular mail services built around us today. We end up receiving mails like **promotions**, **socials**, **subscriptions** and like I said earlier, this isn't really a bad thing that will make our pants go on fire but it definitely can make your mail inbox noisy and abstract away most of the important mails that matter to you. Sometimes this even leads to users opening a new mail for a specific purpose. Annoying!.
+The regular mail services today in and of its self isn't actually that bad, but it can be better. When using the regular mail services built around us today. We end up receiving mails like **promotions**, **socials**, **subscriptions** and like I said earlier, this isn't really a bad thing that will make our pants go on fire but it definitely can make your mail inbox noisy and abstract away most of the important mails that matter to you. Sometimes this even leads to users opening a new mail for a specific purpose. Annoying!.
 
 ### Phishing Attacks
 
