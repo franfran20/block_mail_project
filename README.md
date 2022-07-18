@@ -88,7 +88,7 @@ Most of the improvements listed down below that couldn't be completed were due t
 
 - Make frontend nice.
   Currently the frontend is very basic due to the fact that this was a solo project, had a specific deadline and inability to find teamates within the time I heard about the hacakathon.
-- Add more values to messages
+- Add more values to messages.
   Right now only MATIC test currency can be sent along with a blockmail. Improvements to this will be to send NFT's and tokens alongside messages.
 - Add a fee structure
   To reduce the abuse of the mail service, a fee structure can be established so only important mails can be sent from address to address. To abstract away the service being used as a social app. People wil only pay a transaction fee to send a messsage they consider important!!
