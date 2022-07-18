@@ -84,7 +84,7 @@ async function makeFileObjectsAndStore(_message) {
 
 # Future Improvements
 
-Most of the imporovements listed down below that couldn't be completed were due to time and inability to find teamates within the time of hearing about the hackathon.
+Most of the improvements listed down below that couldn't be completed were due to time and inability to find teamates within the time of hearing about the hackathon.
 
 - Make frontend nice.
   Currently the frontend is very basic due to the fact that this was a solo project, had a specific deadline and inability to find teamates within the time I heard about the hacakathon.
