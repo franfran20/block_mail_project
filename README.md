@@ -25,7 +25,7 @@ Note: Keep in mind that the video was sped up by 3x. When playing with the live 
 - The last section is to show anyone can have the encrypted link stored on ipfs but it requires only the signature of the required adsress to decrypt.
 - This is a huge integration of IPFS and LIT protocol.
 
-<img src="https://ipfs.io/ipfs/bafybeiewrmkuchawpjpvb6mr7gtqpk5qyoh6lk5tbdpvewufbyddf6rl3u/newlogo.png" alt="Blockmail" style="height: 700px; width:1200px;"/>
+<img src="https://ipfs.io/ipfs/bafybeiewrmkuchawpjpvb6mr7gtqpk5qyoh6lk5tbdpvewufbyddf6rl3u/newlogo.png" alt="Blockmail" style="height: 700px; width:1800px;"/>
 
 # What is BlockMail?
 
