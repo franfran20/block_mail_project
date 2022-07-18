@@ -98,3 +98,6 @@ Most of the imporovements listed down below that couldn't be completed were due 
 - Link to the smart contracts code [here](https://github.com/franfran20/blockmail_smart_contracts_testnet).
 - Link to the frontend code [here](https://github.com/franfran20/block_mail_project).
 - Contract Address in mumbai - 0xe0DE79AFdE2a6e6517F7A20E0923d957ee24b3cd
+
+# Contact
+- rickyegboluche@gmail.com
