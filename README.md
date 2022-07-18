@@ -1,3 +1,5 @@
+### Feel free to skip the video guide to understand what BlockMail is all about.
+
 # LINK TO VIDEO DEMO
 Here is the link to the video demo on [youtube](https://youtu.be/MAbMyI3uK1g). The video guide just below!
 Here is the [link](https://restless-limit-8335.on.fleek.co) to the live demo hosted on fleek. (It might be a bit buggy :( )
